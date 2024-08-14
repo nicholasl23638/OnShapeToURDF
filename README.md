@@ -24,9 +24,11 @@ sudo apt-get install meshlab -y
 The Onshape-to-robot Python module needs your API access keys to access your Onshape models.
 Get the Onshape API keys here: https://dev-portal.onshape.com/keys.
 Press the New Key button, then select all the checkboxes.
+
 It will give you this time and ONLY this time the:
-  access key
-  private key
+- access key
+- private key
+
 Save them in a safe place by copy and paste.
 
 ## Create a setup script for setting up keys:
@@ -35,7 +37,7 @@ cd ~/ros2_ws
 touch keys.sh
 chmod +x keys.sh
 ```
-IN keys.sh:
+In keys.sh:
 ```
 // Obtained at https://dev-portal.onshape.com/keys
 export ONSHAPE_API=https://cad.onshape.com
@@ -109,7 +111,7 @@ cd ~/ros2_ws/src/quadruped_description
 onshape-to-robot quadruped
 ```
 Among generated files, you should have a file named robot.urdf.
-Insert the following at the top of robot.urdf (Make this line 1, <robot name="robot_name"> should be line 2):
+Insert the following at the top of robot.urdf (Make this line 1, robot_name should be line 2):
 ```
 <?xml version="1.0"?>
 ```
