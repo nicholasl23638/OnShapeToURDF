@@ -122,8 +122,6 @@ In launch/dingus.launch.py: Assign package_description, robot_desc_path variable
 
 In launch/start_rviz.launch.py: Assign package_description, rviz_config_dir variables to respective pkg / robot names 
 
-- TODO what to do if there's no .rviz file
-
 ## Running Generated Robot
 In shell 1:
 ```
@@ -145,6 +143,16 @@ cd ~/ros2_ws/
 source install/setup.bash
 ros2 run joint_state_publisher_gui joint_state_publisher_gui
 ```
+When rviz2 boots up, adjust the display accordingly:
+
+1. Go to lower left corner of window, click on Add. This will left you create a new display based on display type or topic.
+2. Make sure you're on "By display type", then scroll down until you see RobotModel. Select it and OK.
+3. Under Global Options, set the fixed frame to whatever part of the model you want to act as an anchor point. Usually either the robot base or chassis.
+4. Under RobotModel, set Description Topic to be /robot_description
+
+Final setup should look something like this:
+![image](https://github.com/user-attachments/assets/58de415f-0887-4f96-af30-84f67003111c)
+
 In RVIZ, you should see the robot, and be able to move the joints around using joint_state_publisher_gui.
 
 For more info or if something doesn't work, check out the docs: https://onshape-to-robot.readthedocs.io/en/latest/
