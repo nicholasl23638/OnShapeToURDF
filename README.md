@@ -9,14 +9,12 @@ These robot models are highly convoluted, and generating an accurate URDF versio
 We need a way to export automatically to URDF.
 We can use Onshape-to-robot to export automatically to URDF!
 ```
-sudo pip install onshape-to-robot
+pip install onshape-to-robot
 ```
 ## Dependencies
 ```
-sudo add-apt-repository ppa:openscad/releases
 sudo apt-get update
-sudo apt-get install openscad -y 
-sudo apt-get install meshlab -y 
+sudo apt-get install openscad meshlab
 ```
 The Onshape-to-robot Python module needs your API access keys to access your Onshape models.
 Get the Onshape API keys here: https://dev-portal.onshape.com/keys.
