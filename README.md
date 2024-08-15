@@ -9,7 +9,7 @@ These robot models are highly convoluted, and generating an accurate URDF versio
 We need a way to export automatically to URDF.
 We can use Onshape-to-robot to export automatically to URDF!
 ```
-pip install onshape-to-robot
+sudo pip install onshape-to-robot
 ```
 ## Dependencies
 ```
