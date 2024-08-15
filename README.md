@@ -116,7 +116,7 @@ Insert the following at the top of robot.urdf (Make this line 1, robot_name shou
 ```
 
 ## ROS launch
-Fill in the code for the ROS2 launch files.
+Fill in the code for the ROS2 launch files. Copy launch files from quadruped_description pkg. Rename any reference to "quadruped" to dingus
 
 In launch/dingus.launch.py: Assign package_description, robot_desc_path variables to respective pkg / robot names
 
