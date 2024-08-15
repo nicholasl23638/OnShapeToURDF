@@ -1,5 +1,5 @@
 # OnShapeToURDF
-Full disclaimer: I yoinked most of this stuff from The Construct's course on URDF :)
+Full disclaimer: I yoinked some of this stuff from The Construct's course on URDF :)
 
 I named the robot in this case "dingus". Any reference to the name dingus should be replaced with your robot's name.
 
