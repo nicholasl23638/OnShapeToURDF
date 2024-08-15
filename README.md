@@ -105,6 +105,10 @@ cd ~/ros2_ws/src/dingus_description
 # Execute the export
 onshape-to-robot dingus
 ```
+Note: if you get an error mentioning numpy version being 0xe instead of 0x10, install a newer version of numpy on your machine (1.23.x)
+```
+pip install numpy==1.23.0 --force
+```
 Among generated files, you should have a file named robot.urdf.
 Insert the following at the top of robot.urdf (Make this line 1, robot_name should be line 2):
 ```
