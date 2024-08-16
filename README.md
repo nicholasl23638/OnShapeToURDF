@@ -8,13 +8,17 @@ Normally, we have a full assembly of our robots in a CAD system.
 These robot models are highly convoluted, and generating an accurate URDF version by hand is no easy feat.
 We need a way to export automatically to URDF.
 We can use Onshape-to-robot to export automatically to URDF!
-```
-sudo pip install onshape-to-robot
-```
+
 ## Dependencies
+Assuming you've already installed ROS2 Humble on your linux / VM computer.
 ```
 sudo apt-get update
+# for onshape-to-robot
+sudo pip install onshape-to-robot
 sudo apt-get install openscad meshlab
+# for rviz / vizualisation
+sudo apt install ros-humble-xacro
+sudo apt-get -y install joint-state-publisher-gui
 ```
 The Onshape-to-robot Python module needs your API access keys to access your Onshape models.
 Get the Onshape API keys here: https://dev-portal.onshape.com/keys.
