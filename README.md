@@ -130,7 +130,7 @@ In launch/start_rviz.launch.py: Assign package_description, rviz_config_dir vari
 In shell 1:
 ```
 cd ~/ros2_ws/
-source install/setup.bash
+source /opt/ros/humble/setup.bash
 colcon build --packages-select dingus_description
 source install/setup.bash
 ros2 launch dingus_description dingus.launch.py
@@ -138,12 +138,14 @@ ros2 launch dingus_description dingus.launch.py
 In shell 2:
 ```
 cd ~/ros2_ws/
+source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 launch dingus_description start_rviz.launch.py
 ```
 In shell 3:
 ```
 cd ~/ros2_ws/
+source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 run joint_state_publisher_gui joint_state_publisher_gui
 ```
