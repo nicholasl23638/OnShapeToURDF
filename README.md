@@ -95,7 +95,7 @@ Now, add the contents of the config.json file.
 In config.json (note: you'll have to delete the comments - comments are not allowed in JSON):
 ```
 {
-  "documentId": "33b91de06ddc91b068fcf725", # this ID is found in URL of Onshape file. ex: URL = https://cad.onshape.com/documents/33b91de06ddc91b068fcf725/w/3e9cd5a83630cb75d064813a/e/8e6a230fa3aabb1441b0aa17
+  "documentId": "536a8051abba5659f38bd6ec", # this ID is found in URL of Onshape file. ex: URL = https://cad.onshape.com/documents/33b91de06ddc91b068fcf725/w/3e9cd5a83630cb75d064813a/e/8e6a230fa3aabb1441b0aa17
   "outputFormat": "urdf",                                                                                                      # YOUR documentId ^^^
   "packageName": "dingus_description/dingus", # path from ROS workspace (ie: robot_ws) to folder where generated urdf is located
   "robotName": "dingus_robot",
